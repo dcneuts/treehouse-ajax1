@@ -8,14 +8,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/flickr.js"></script>
 </head>
+<!--This has been modified from the standard class project version for experimentation-->
 <body>
+<!--Begin the categorical search-->
 <div class="grid-container centered">
     <div class="grid-100">
         <div class="contained">
             <div class="grid-100">
                 <div class="heading">
                     <h1>Flickr Photo Feeder</h1>
-                    <p>Choose which kind of animal you'd like to return photos of...</p>
+                    <p>Choose the photo category you'd like to see, or enter your own search terms below:</p>
                 </div>
                 <ul class="filter-select">
                     <li>
@@ -33,6 +35,28 @@
             <div id="photos">
 
             </div>
+        </div>
+    </div>
+</div>
+<!--Begin the search function under categories-->
+<div class="grid-container centered">
+    <div class="grid-100">
+        <div class="contained">
+            <div class="grid-100">
+                <div class="heading">
+                    <h1>Flickr Photo Search</h1>
+                    <form>
+                        <label for="search">Type a search term</label>
+                        <input type="search" name="search" id="search">
+                        <input type="submit" value="Search" id="submit">
+                    </form>
+
+                </div>
+            </div>
+
+            <ul id="photos">
+
+            </ul>
         </div>
     </div>
 </div>
